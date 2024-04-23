@@ -6,7 +6,7 @@ from sqlalchemy.orm import relationship, declarative_base
 
 
 
-URI = f"postgresql://posgres:567234@localhost:5432/HW7"
+URI = f"postgresql://postgres:567234@localhost:5432/HW7"
 
 engine = create_engine(URI, echo=False, pool_size=5, max_overflow=0)
 DBsession = sessionmaker(bind = engine)
